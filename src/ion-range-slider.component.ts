@@ -1,7 +1,7 @@
 import {ElementRef, OnChanges, SimpleChanges, Input, EventEmitter, Output, Component} from "@angular/core";
 import 'ion-rangeslider'
 
-import * as jQuery from "jquery";
+declare var jQuery:any;
 
 @Component({
     selector: 'ion-range-slider',

@@ -1,12 +1,10 @@
 {
   "name": "ng2-ion-range-slider",
-  "version": "1.0.3",
+  "version": "2.0.3",
   "description": "Ion Range Slider for AngularJS 2",
-  "main": "index.js",
-  "types": "index.d.ts",
   "scripts": {
-    "watch": "tsc -p src -w",
-    "ngc-build": "rm -rf lib && rm -f *.tgz && \"node_modules/.bin/ngc\" -p tsconfig.json"
+    "packagr": "ng-packagr -p ng-package.json",
+    "pack": "cd dist && npm pack"
   },
   "repository": {
     "type": "git",
@@ -24,18 +22,33 @@
   "bugs": {
     "url": "https://github.com/PhilippStein/ng2-ion-range-slider/issues"
   },
-  "homepage": "https://github.com/PhilippStein/ng2-ion-range-slider#readme",
-  "devDependencies": {
-    "@angular/common": "^2.4.4",
-    "@angular/compiler": "^2.4.4",
-    "@angular/compiler-cli": "^2.4.4",
-    "@angular/core": "^2.4.4",
-    "@types/core-js": "^0.9.41",
-    "typescript": "2.0.9"
-  },
+  "private": false,
   "dependencies": {
-    "@angular/core": ">=2.4.4",
-    "@types/jquery": "^2.0.40",
-    "ion-rangeslider": "^2.1.6"
+    "@angular/animations": "^5.2.0",
+    "@angular/common": "^5.2.0",
+    "@angular/compiler": "^5.2.0",
+    "@angular/core": "^5.2.0",
+    "@angular/forms": "^5.2.0",
+    "@angular/http": "^5.2.0",
+    "@angular/platform-browser": "^5.2.0",
+    "@angular/platform-browser-dynamic": "^5.2.0",
+    "@angular/router": "^5.2.0",
+    "core-js": "^2.4.1",
+    "ion-rangeslider": "^2.1.6",
+    "rxjs": "^5.5.6",
+    "zone.js": "^0.8.19"
+  },
+  "devDependencies": {
+    "@angular/cli": "~1.7.2",
+    "@angular/compiler-cli": "^5.2.0",
+    "@angular/language-service": "^5.2.0",
+    "@types/jasmine": "~2.8.3",
+    "@types/jasminewd2": "~2.0.2",
+    "@types/node": "~6.0.60",
+    "codelyzer": "^4.0.1",
+    "ng-packagr": "^2.2.0",
+    "ts-node": "~4.1.0",
+    "tslint": "~5.9.1",
+    "typescript": "~2.5.3"
   }
 }
